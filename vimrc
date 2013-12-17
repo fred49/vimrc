@@ -136,6 +136,7 @@ NeoBundleCheck
 syntax enable
 
 colorscheme BlackSea
+colorscheme desert
 
 " Default to utf8
 set encoding=utf-8
