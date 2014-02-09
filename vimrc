@@ -113,6 +113,20 @@ NeoBundleLazy 'majutsushi/tagbar'
 NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim/' }
 "NeoBundle 'bling/vim-airline' " fork of Lokaltog/vim-powerline
 
+
+NeoBundle 'https://github.com/mitechie/pyflakes-pathogen'
+NeoBundle 'https://github.com/ehamberg/vim-cute-python.git'
+NeoBundle 'https://github.com/hynek/vim-python-pep8-indent.git'
+NeoBundle 'https://github.com/scrooloose/syntastic.git'
+NeoBundle 'https://github.com/davidhalter/jedi-vim.git'
+
+setlocal textwidth=80
+setlocal expandtab
+setlocal tabstop=4
+setlocal softtabstop=4
+setlocal shiftwidth=4
+
+
 " colorscheme
 NeoBundle 'BlackSea'
 
@@ -311,3 +325,24 @@ set laststatus=2
 
 hi Search ctermbg=red
 
+
+" environment variable "{{{
+"let $PATH = kenkov#ExpandPaths('~/.pythonbrew/bin',
+                           \ '~/.pythonbrew/pythons/Python-2.7.3/bin',
+                           \ ) . $PATH
+"let $PYTHONPATH = kenkov#ExpandPaths('~/.pythonbrew/pythons/Python-2.7.3/lib'
+                                 \ ) . $PYTHONPATH
+"}}}
+let python_highlight_numbers = 1
+let python_highlight_builtins = 1
+let python_highlight_exceptions = 1
+let python_highlight_space_errors = 1
+" jedi-vim"{{{
+let g:jedi#auto_initialization = 1
+let g:jedi#rename_command = "<leader>R"
+let g:jedi#popup_on_dot = 0
+autocmd FileType python let b:did_ftplugin = 1
+"}}}
+" syntastic"{{{
+let g:syntastic_auto_loc_list=1
+"}}}
