@@ -346,3 +346,5 @@ autocmd FileType python let b:did_ftplugin = 1
 " syntastic"{{{
 let g:syntastic_auto_loc_list=1
 "}}}
+
+set history=1000
