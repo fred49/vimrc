@@ -119,6 +119,7 @@ NeoBundle 'https://github.com/ehamberg/vim-cute-python.git'
 NeoBundle 'https://github.com/hynek/vim-python-pep8-indent.git'
 NeoBundle 'https://github.com/scrooloose/syntastic.git'
 NeoBundle 'https://github.com/davidhalter/jedi-vim.git'
+NeoBundle 'https://github.com/jmcantrell/vim-virtualenv.git'
 
 setlocal textwidth=80
 setlocal expandtab
