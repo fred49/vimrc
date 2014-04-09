@@ -323,8 +323,8 @@ au bufwinleave ?* mkview
 au bufwinenter ?* silent loadview
 set laststatus=2
 
-hi Search ctermbg=red
 hi Search ctermbg=DarkGrey
+hi Search ctermbg=red
 
 
 " environment variable "{{{
