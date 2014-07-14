@@ -155,6 +155,8 @@ colorscheme desert
 
 " Default to utf8
 set encoding=utf-8
+:set encoding=utf-8
+:set fileencoding=utf-8
 
 " Line numbers
 set nu
@@ -326,6 +328,7 @@ set laststatus=2
 
 hi Search ctermbg=DarkGrey
 hi Search ctermbg=red
+hi Search ctermbg=green
 
 
 " environment variable "{{{
@@ -350,3 +353,9 @@ let g:syntastic_auto_loc_list=1
 "}}}
 
 set history=1000
+set cursorline
+set cursorcolumn
+
+:hi CursorLine   cterm=NONE ctermbg=4 ctermfg=white guibg=darkred guifg=white
+:hi CursorColumn   cterm=NONE ctermbg=4 ctermfg=white guibg=darkred guifg=white
+
